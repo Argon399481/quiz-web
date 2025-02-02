@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../App.css";
+import "./App.css";
 
 const Quiz = () => {
   const [questions, setQuestions] = useState([]);
@@ -14,7 +14,7 @@ const Quiz = () => {
   const [correctAnswerText, setCorrectAnswerText] = useState(""); // 自由記述の正解を表示
 
   useEffect(() => {
-    fetch("/questions.json")
+    fetch("questions.json")
       .then((response) => response.json())
       .then((data) => {
         if (data && data.questions) {

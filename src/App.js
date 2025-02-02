@@ -1,6 +1,6 @@
 import "./App.css";
 import React, { useState } from "react";
-import Quiz from "./components/Quiz"; // Quizコンポーネントのインポート
+import Quiz from "./Quiz"; // Quizコンポーネントのインポート
 
 const App = () => {
   const [quizStarted, setQuizStarted] = useState(false);
