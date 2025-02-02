@@ -5,20 +5,30 @@
       "question": "ワンと鳴くのは？",
       "choices": ["犬", "猫", "ウサギ", "イノシシ"],
       "correctAnswer": 0,
-      "type": "single"
+      "type": "single",
+      "isIncorrect": false
     },
     {
       "id": 2,
-      "question": "以下の動物の中で鳴くものは？",
-      "choices": ["犬", "猫", "ウサギ", "イノシシ"],
-      "correctAnswers": [0, 1],
-      "type": "multiple"
+      "question": "ある相補配列をなるべく他の場所の相補配列と被らないように設計した配列を何というか。(17)",
+      "choices": ["正規直行配列", "正規直交配列", "不正規直交配列", "イノシシ"],
+      "correctAnswer": 1,
+      "type": "single"
     },
     {
       "id": 3,
+      "question": "以下の動物の中で鳴くものは？",
+      "choices": ["犬", "猫", "ウサギ", "イノシシ"],
+      "correctAnswers": [0, 1],
+      "type": "multiple",
+      "isIncorrect": false
+    },
+    {
+      "id": 4,
       "question": "猫の鳴き声は？",
       "correctAnswer": "ニャー",
-      "type": "text"
+      "type": "text",
+      "isIncorrect": false
     }
   ]
 }
