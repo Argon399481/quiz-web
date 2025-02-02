@@ -14,7 +14,7 @@ const Quiz = () => {
   const [correctAnswerText, setCorrectAnswerText] = useState(""); // 自由記述の正解を表示
 
   useEffect(() => {
-    fetch("questions.json")
+    fetch("/quiz-web/questions.json")
       .then((response) => response.json())
       .then((data) => {
         if (data && data.questions) {
