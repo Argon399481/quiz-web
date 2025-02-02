@@ -205,11 +205,11 @@ const Quiz = () => {
             </>
           ) : (
             <div>
-              <h2>お疲れさまでした！</h2>
+              <h2>クイズは以上です！</h2>
               <p>
                 正解数: {correctAnswersCount} / {questions.length}
               </p>
-              <p>クイズが終了しました！</p>
+              <p>お疲れさまでした！</p>
               <button onClick={handleReturnToTitle}>タイトルへ戻る</button>
             </div>
           )}
