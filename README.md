@@ -1,4 +1,4 @@
-# クイズがプレイできます。
+# クイズがプレイできます
 
 ↓ アクセスは以下の URL から
 https://argon399481.github.io/quiz-web/
