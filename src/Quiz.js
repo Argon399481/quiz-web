@@ -105,7 +105,21 @@ const Quiz = () => {
     }
   };
 
+  // 配列をランダムに並び替える関数
+  const shuffleArray = (array) => {
+    const shuffled = array.slice(); // 元の配列を変更しないようにコピー
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
   const handleStartQuiz = () => {
+    // クイズ開始時に questions をシャッフル
+    const shuffledQuestions = shuffleArray(questions);
+    setQuestions(shuffledQuestions);
+
     setQuizStarted(true);
     setQuestionIndex(0);
     setCorrectAnswersCount(0);
