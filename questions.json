@@ -173,6 +173,102 @@
       ],
       "correctAnswer": [0, 2, 3],
       "type": "multiple"
+    },
+    {
+      "id": "s1",
+      "question": "ある相補配列をなるべく他の場所の相補配列と被らないように設計した配列を何というか。(17)",
+      "correctAnswer": "正規直交配列",
+      "type": "text"
+    },
+    {
+      "id": "s2",
+      "question": "DNAオリガミ構造体を構成する2つの要素は何か。(18)",
+      "correctAnswer": "スキャホールド鎖とステープル鎖",
+      "type": "text"
+    },
+    {
+      "id": "s3",
+      "question": "スキャホールド鎖には、7249塩基の環状一本鎖DNAである[_____]ssDNAが使われる。(18)",
+      "correctAnswer": "M13mp18",
+      "type": "text"
+    },
+    {
+      "id": "s4",
+      "question": "一番目のクロスオーバーと二番目のクロスオーバーから数えて[_____]周期進んだところに二番目と三番目のクロスオーバーを配置する。(18)",
+      "correctAnswer": "1.5",
+      "type": "text"
+    },
+    {
+      "id": "s5",
+      "question": "B型二重らせんの周期は[_____]塩基対。(18)",
+      "correctAnswer": "10.5",
+      "type": "text"
+    },
+    {
+      "id": "s6",
+      "question": "[_____]塩基ごとにステープル鎖がらせんを乗り越えていく。(18)",
+      "correctAnswer": "16",
+      "type": "text"
+    },
+    {
+      "id": "s7",
+      "question": "ステープル鎖の塩基数が合計[_____]塩基になる。(18)",
+      "correctAnswer": "32",
+      "type": "text"
+    },
+    {
+      "id": "s8",
+      "question": "溶液中に必ず二価の陽イオンである[_____]を加える。(18)",
+      "correctAnswer": "マグネシウムイオン",
+      "type": "text"
+    },
+    {
+      "id": "s9",
+      "question": "SST(Single-stranded tile)と呼ばれるDNAタイルをもとに作られた2次元・3次元構造のことを何というか。(20)",
+      "correctAnswer": "DNAブリック",
+      "type": "text"
+    },
+    {
+      "id": "s10",
+      "question": "構造の核にコロイド粒子を用いてここにDNAを修飾することで、その相互作用によって結晶構造を作ることができる。比較的簡便な作成手法が確立されていることからナノ粒子には何が用いられることが多いか。(21)",
+      "correctAnswer": "金",
+      "type": "text"
+    },
+    {
+      "id": "s11",
+      "question": "環状のテンプレートとなるDNAを用意しその相補配列をもつプライマーDNAをハイブリダイゼーションさせ、DNAポリメラーゼを使って伸長反応を開始させる。テンプレートの相補鎖を繰り返しもった長い一本鎖DNAを作成することができるこのプロセスを何というか。(22)",
+      "correctAnswer": "RCA(Rolling Circle Amplification)",
+      "type": "text"
+    },
+    {
+      "id": "s12",
+      "question": "DNAウォーカーの足場となる下部に突き出している一本鎖の領域を[_____]と呼ぶ。(25)",
+      "correctAnswer": "固定子(Stator)",
+      "type": "text"
+    },
+    {
+      "id": "s13",
+      "question": "ハイブリダイゼーション反応のみで自律的に反応が進み、二種類のヘアピンDNAから反応開始のトリガーとなるイニシエーターのssDNAからなるある種の増幅機構は何と呼ばれるか。(27)",
+      "correctAnswer": "Hybridization Chain Reaction (HCR)",
+      "type": "text"
+    },
+    {
+      "id": "s14",
+      "question": "DNAzymeは金属イオンにより[_____]活性を持つ。(30)",
+      "correctAnswer": "ヌクレアーゼ",
+      "type": "text"
+    },
+    {
+      "id": "s15",
+      "question": "シーソーゲートは、回路単体の動作が接続によって影響を受けない性質である[_____]性に優れている。(32)",
+      "correctAnswer": "モジュール",
+      "type": "text"
+    },
+    {
+      "id": "s16",
+      "question": "DNAtoolboxはDNA同士の反応と[_____]の両方を組み合わせた枠組みである。(33)",
+      "correctAnswer": "酵素反応",
+      "type": "text"
     }
   ]
 }
