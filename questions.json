@@ -5,8 +5,7 @@
       "question": "ワンと鳴くのは？",
       "choices": ["犬", "猫", "ウサギ", "イノシシ"],
       "correctAnswer": 0,
-      "type": "single",
-      "isIncorrect": false
+      "type": "single"
     },
     {
       "id": 2,
@@ -20,15 +19,13 @@
       "question": "以下の動物の中で鳴くものは？",
       "choices": ["犬", "猫", "ウサギ", "イノシシ"],
       "correctAnswers": [0, 1],
-      "type": "multiple",
-      "isIncorrect": false
+      "type": "multiple"
     },
     {
       "id": 4,
       "question": "猫の鳴き声は？",
       "correctAnswer": "ニャー",
-      "type": "text",
-      "isIncorrect": false
+      "type": "text"
     }
   ]
 }
