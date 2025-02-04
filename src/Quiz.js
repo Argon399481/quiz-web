@@ -25,7 +25,11 @@ const Quiz = () => {
   }, []);
 
   if (questions.length === 0) {
-    return <p>問題ファイルを用意してからリロードしてください</p>;
+    return (
+      <p>
+        問題ファイルが読み込まれませんでした...作成者に問い合わせてください。
+      </p>
+    );
   }
 
   const handleMultipleChoice = (index) => {
