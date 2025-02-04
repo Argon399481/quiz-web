@@ -2,9 +2,14 @@
   text-align: center;
 }
 
+label {
+  display: block;
+  margin-bottom: 8px; /* 選択肢同士の間隔 */
+}
+
 /* ハイライト用のクラス */
 .highlight {
-  background-color: rgb(200, 0, 0); /* ハイライト背景色 */
+  background-color: rgb(150, 0, 0); /* ハイライト背景色 */
   transition: background-color 0.3s ease-in-out; /* なめらかな背景色の変更 */
 }
 p {

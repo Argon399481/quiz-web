@@ -7,7 +7,7 @@ const Quiz = () => {
   const [selectedChoices, setSelectedChoices] = useState([]);
   const [answerText, setAnswerText] = useState("");
   const [answered, setAnswered] = useState(false);
-  const [correctAnswersCount, setCorrectAnswersCount] = useState(0);
+  const [correctAnswerCount, setcorrectAnswerCount] = useState(0);
   const [quizStarted, setQuizStarted] = useState(false);
   const [feedback, setFeedback] = useState("");
   const [highlightedChoices, setHighlightedChoices] = useState([]); // 正解選択肢のハイライト用
@@ -55,11 +55,11 @@ const Quiz = () => {
       isCorrect = currentQuestion.correctAnswer === selectedChoices[0];
     } else if (currentQuestion.type === "multiple") {
       if (
-        Array.isArray(currentQuestion.correctAnswers) &&
+        Array.isArray(currentQuestion.correctAnswer) &&
         Array.isArray(selectedChoices)
       ) {
         isCorrect =
-          JSON.stringify(currentQuestion.correctAnswers.sort()) ===
+          JSON.stringify(currentQuestion.correctAnswer.sort()) ===
           JSON.stringify(selectedChoices.sort());
       }
     } else if (currentQuestion.type === "text") {
@@ -69,7 +69,7 @@ const Quiz = () => {
     }
 
     if (isCorrect) {
-      setCorrectAnswersCount((prevCount) => prevCount + 1);
+      setcorrectAnswerCount((prevCount) => prevCount + 1);
       setFeedback("正解！");
       setHighlightedChoices([]);
       setCorrectAnswerText("");
@@ -78,7 +78,7 @@ const Quiz = () => {
       if (currentQuestion.type === "single") {
         setHighlightedChoices([currentQuestion.correctAnswer]);
       } else if (currentQuestion.type === "multiple") {
-        setHighlightedChoices(currentQuestion.correctAnswers || []);
+        setHighlightedChoices(currentQuestion.correctAnswer || []);
       } else if (currentQuestion.type === "text") {
         setCorrectAnswerText(`正解: ${currentQuestion.correctAnswer}`);
       }
@@ -122,7 +122,7 @@ const Quiz = () => {
 
     setQuizStarted(true);
     setQuestionIndex(0);
-    setCorrectAnswersCount(0);
+    setcorrectAnswerCount(0);
     setAnswered(false);
     setFeedback("");
     setHighlightedChoices([]);
@@ -225,7 +225,7 @@ const Quiz = () => {
             <div>
               <h2>クイズは以上です！</h2>
               <p>
-                正解数: {correctAnswersCount} / {questions.length}
+                正解数: {correctAnswerCount} / {questions.length}
               </p>
               <p>お疲れさまでした！</p>
               <button onClick={handleReturnToTitle}>タイトルへ戻る</button>
