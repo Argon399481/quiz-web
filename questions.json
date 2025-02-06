@@ -183,44 +183,55 @@
     {
       "id": "s2",
       "question": "DNAオリガミ構造体を構成する2つの要素は何か。(18)",
-      "correctAnswer": "スキャホールド鎖とステープル鎖",
-      "type": "text"
+      "choices": [
+        "スキャホールド鎖",
+        "サポート鎖",
+        "ストップ鎖",
+        "ステープル鎖"
+      ],
+      "correctAnswer": [0, 3],
+      "type": "multiple"
     },
     {
       "id": "s3",
-      "question": "スキャホールド鎖には、7249塩基の環状一本鎖DNAである[_____]ssDNAが使われる。(18)",
+      "question": "DNAオリガミのスキャホールド鎖には7249塩基の環状一本鎖DNAである[_____]ssDNAが使われる。(18)",
       "correctAnswer": "M13mp18",
       "type": "text"
     },
     {
       "id": "s4",
-      "question": "一番目のクロスオーバーと二番目のクロスオーバーから数えて[_____]周期進んだところに二番目と三番目のクロスオーバーを配置する。(18)",
-      "correctAnswer": "1.5",
-      "type": "text"
+      "question": "ステープル鎖は通常[_____]塩基。(18)",
+      "choices": ["8", "16", "32"],
+      "correctAnswer": 2,
+      "type": "single"
     },
     {
       "id": "s5",
       "question": "B型二重らせんの周期は[_____]塩基対。(18)",
-      "correctAnswer": "10.5",
-      "type": "text"
+      "choices": ["9.5", "10.5", "11.5", "12.5"],
+      "correctAnswer": 1,
+      "type": "single"
     },
     {
       "id": "s6",
-      "question": "[_____]塩基ごとにステープル鎖がらせんを乗り越えていく。(18)",
-      "correctAnswer": "16",
-      "type": "text"
+      "question": "ステープル鎖の塩基のうちの[_____]塩基は「2番目のらせんと相補的な部分」に由来する。(18)",
+      "choices": ["8", "16", "32"],
+      "correctAnswer": 1,
+      "type": "single"
     },
     {
       "id": "s7",
-      "question": "ステープル鎖の塩基数が合計[_____]塩基になる。(18)",
-      "correctAnswer": "32",
-      "type": "text"
+      "question": "DNAオリガミ構造の足場となる鎖は通常[_____]塩基の環状一本鎖DNAである。(18)",
+      "choices": ["1249", "3249", "7249", "1749"],
+      "correctAnswer": 2,
+      "type": "single"
     },
     {
       "id": "s8",
-      "question": "溶液中に必ず二価の陽イオンである[_____]を加える。(18)",
-      "correctAnswer": "マグネシウムイオン",
-      "type": "text"
+      "question": "溶液中に必ず二価の陽イオンである[_____]イオンを加える。(18)",
+      "choices": ["炭酸", "カリウム", "鉄", "マグネシウム"],
+      "correctAnswer": 3,
+      "type": "single"
     },
     {
       "id": "s9",
@@ -230,32 +241,36 @@
     },
     {
       "id": "s10",
-      "question": "構造の核にコロイド粒子を用いてここにDNAを修飾することで、その相互作用によって結晶構造を作ることができる。比較的簡便な作成手法が確立されていることからナノ粒子には何が用いられることが多いか。(21)",
-      "correctAnswer": "金",
-      "type": "text"
+      "question": "コロイド粒子にDNAを修飾することで結晶構造を作ることができるSNAは、比較的簡便な作成手法が確立されていることから[___]ナノ粒子が用いられることが多い。(21)",
+      "choices": ["金", "銀", "銅", "磁性"],
+      "correctAnswer": 0,
+      "type": "single"
     },
     {
       "id": "s11",
-      "question": "環状のテンプレートとなるDNAを用意しその相補配列をもつプライマーDNAをハイブリダイゼーションさせ、DNAポリメラーゼを使って伸長反応を開始させる。テンプレートの相補鎖を繰り返しもった長い一本鎖DNAを作成することができるこのプロセスを何というか。(22)",
-      "correctAnswer": "RCA(Rolling Circle Amplification)",
-      "type": "text"
+      "question": "環状DNAを鋳型にすることが特徴的な、ポリメラーゼ伸長反応を用いて長い一本鎖DNAを合成する方法を何というか。(22)",
+      "choices": ["LCA", "ROA", "RCA"],
+      "correctAnswer": 2,
+      "type": "single"
     },
     {
       "id": "s12",
       "question": "DNAウォーカーの足場となる下部に突き出している一本鎖の領域を[_____]と呼ぶ。(25)",
-      "correctAnswer": "固定子(Stator)",
-      "type": "text"
+      "choices": ["突出子", "振動子", "固定子", "土台子"],
+      "correctAnswer": 2,
+      "type": "single"
     },
     {
       "id": "s13",
-      "question": "ハイブリダイゼーション反応のみで自律的に反応が進み、二種類のヘアピンDNAから反応開始のトリガーとなるイニシエーターのssDNAからなるある種の増幅機構は何と呼ばれるか。(27)",
-      "correctAnswer": "Hybridization Chain Reaction (HCR)",
-      "type": "text"
+      "question": "核酸の高感度検出に使用できる、ssDNAと2種類のヘアピンDNAからなる自律的に反応が進む核酸増幅機構を何というか。(27)",
+      "choices": ["HBR", "HCP", "HCR", "HBP"],
+      "correctAnswer": 2,
+      "type": "single"
     },
     {
       "id": "s14",
-      "question": "DNAzymeは金属イオンにより[_____]活性を持つ。(30)",
-      "correctAnswer": "ヌクレアーゼ",
+      "question": "特別な配列を持つDNAは酵素のような活性を持ち、一般的に[_____]と呼ばれる。(30)",
+      "correctAnswer": "DNAzyme",
       "type": "text"
     },
     {
@@ -266,8 +281,8 @@
     },
     {
       "id": "s16",
-      "question": "DNAtoolboxはDNA同士の反応と[_____]の両方を組み合わせた枠組みである。(33)",
-      "correctAnswer": "酵素反応",
+      "question": "DNAtoolboxはDNA同士の反応と[_____]反応の両方を組み合わせた枠組みである。(33)",
+      "correctAnswer": "酵素",
       "type": "text"
     }
   ]
