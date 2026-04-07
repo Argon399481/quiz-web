@@ -1,7 +1,7 @@
 # クイズがプレイできます
 
 ↓ アクセスは以下の URL から  
-[https://argon399481.github.io/quiz-web/](https://Argon399481.github.io/quiz-web/)
+https://Argon399481.github.io/quiz-web/
 
 ## このアプリケーションは Create React App を使用して作成しています
 
