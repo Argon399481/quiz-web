@@ -2,7 +2,7 @@
   "name": "quiz-web",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://argon399481.github.io/quiz-web",
+  "homepage": "https://Argon399481.github.io/quiz-web",
   "dependencies": {
     "cra-template": "1.2.0",
     "gh-pages": "^6.3.0",
