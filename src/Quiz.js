@@ -13,24 +13,72 @@ const Quiz = () => {
   const [highlightedChoices, setHighlightedChoices] = useState([]); // 正解選択肢のハイライト用
   const [correctAnswerText, setCorrectAnswerText] = useState(""); // 自由記述の正解を表示
 
+import React, { useState, useEffect } from "react";
+
+export default function Quiz() {
+  const [questions, setQuestions] = useState([]);
+  const [selectedFile, setSelectedFile] = useState("questions.json");
+
   useEffect(() => {
-    fetch("/quiz-web/questions.json")
+    fetch(`/quiz-web/${selectedFile}`)
       .then((response) => response.json())
       .then((data) => {
         if (data && data.questions) {
           setQuestions(data.questions);
+        } else {
+          setQuestions([]);
         }
       })
-      .catch((error) => console.error("Error loading questions:", error));
-  }, []);
+      .catch((error) => {
+        console.error("Error loading questions:", error);
+        setQuestions([]);
+      });
+  }, [selectedFile]); // selectedFile が変わったら再読み込み
 
   if (questions.length === 0) {
     return (
-      <p>
-        問題ファイルが読み込まれませんでした...作成者に問い合わせてください。
-      </p>
+      <div>
+        <FileSelector
+          selectedFile={selectedFile}
+          setSelectedFile={setSelectedFile}
+        />
+        <p>
+          問題ファイルが読み込まれませんでした...作成者に問い合わせてください。
+        </p>
+      </div>
     );
   }
+
+  return (
+    <div>
+      <FileSelector selectedFile={selectedFile} setSelectedFile={setSelectedFile} />
+      {/* ここに questions を使ったクイズ表示 */}
+      {questions.map((q, idx) => (
+        <div key={idx}>
+          <p>{q.question}</p>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+// ファイル選択用コンポーネント
+function FileSelector({ selectedFile, setSelectedFile }) {
+  const files = ["questions.json", "questions2.json", "questions3.json"]; // public に置いたファイル
+
+  return (
+    <select
+      value={selectedFile}
+      onChange={(e) => setSelectedFile(e.target.value)}
+    >
+      {files.map((file) => (
+        <option key={file} value={file}>
+          {file}
+        </option>
+      ))}
+    </select>
+  );
+}
 
   const handleMultipleChoice = (index) => {
     setSelectedChoices((prevChoices) => {
