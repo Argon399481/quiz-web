@@ -1,0 +1,11 @@
+{
+  "questions": [
+    {
+      "id": "test",
+      "question": "猫は豚ですか？",
+      "choices": ["はい", "いいえ", "どちらでもない", "不明"],
+      "correctAnswer": 1,
+      "type": "single"
+    }
+  ]
+}
