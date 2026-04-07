@@ -134,13 +134,13 @@ const Quiz = () => {
       <div>
         <h1>クイズファイルを選択してください</h1>
         <button onClick={() => handleSelectFile("questions1.json")}>
-          クイズ1
+          2025年度版クイズ
         </button>
-        <button onClick={() => handleSelectFile("questions2.json")}>
-          クイズ2
-        </button>
-        <button onClick={() => handleSelectFile("questions3.json")}>
-          クイズ3
+        <button
+          style={{ marginLeft: "20px" }}
+          onClick={() => handleSelectFile("questions2.json")}
+        >
+          2026年度版クイズ
         </button>
       </div>
     );
