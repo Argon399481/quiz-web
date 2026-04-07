@@ -7,30 +7,28 @@ const Quiz = () => {
   const [selectedChoices, setSelectedChoices] = useState([]);
   const [answerText, setAnswerText] = useState("");
   const [answered, setAnswered] = useState(false);
-  const [correctAnswerCount, setcorrectAnswerCount] = useState(0);
+  const [correctAnswerCount, setCorrectAnswerCount] = useState(0);
   const [quizStarted, setQuizStarted] = useState(false);
   const [feedback, setFeedback] = useState("");
-  const [highlightedChoices, setHighlightedChoices] = useState([]); // 正解選択肢のハイライト用
-  const [correctAnswerText, setCorrectAnswerText] = useState(""); // 自由記述の正解を表示
+  const [highlightedChoices, setHighlightedChoices] = useState([]);
+  const [correctAnswerText, setCorrectAnswerText] = useState("");
+  const [quizFile, setQuizFile] = useState(""); // 選択されたファイル
 
+  // 選択されたファイルに応じて questions を読み込む
   useEffect(() => {
-    fetch("/quiz-web/questions.json")
-      .then((response) => response.json())
-      .then((data) => {
-        if (data && data.questions) {
-          setQuestions(data.questions);
-        }
-      })
-      .catch((error) => console.error("Error loading questions:", error));
-  }, []);
+    if (!quizFile) return;
 
-  if (questions.length === 0) {
-    return (
-      <p>
-        問題ファイルが読み込まれませんでした...作成者に問い合わせてください。
-      </p>
-    );
-  }
+    fetch(`/quiz-web/${quizFile}`)
+      .then((res) => res.json())
+      .then((data) => {
+        if (data && data.questions) setQuestions(data.questions);
+      })
+      .catch((err) => console.error("Error loading questions:", err));
+  }, [quizFile]);
+
+  const handleSelectFile = (fileName) => {
+    setQuizFile(fileName);
+  };
 
   const handleMultipleChoice = (index) => {
     setSelectedChoices((prevChoices) => {
@@ -48,7 +46,6 @@ const Quiz = () => {
 
   const handleAnswer = () => {
     const currentQuestion = questions[questionIndex];
-
     let isCorrect = false;
 
     if (currentQuestion.type === "single") {
@@ -69,7 +66,7 @@ const Quiz = () => {
     }
 
     if (isCorrect) {
-      setcorrectAnswerCount((prevCount) => prevCount + 1);
+      setCorrectAnswerCount((prev) => prev + 1);
       setFeedback("正解！");
       setHighlightedChoices([]);
       setCorrectAnswerText("");
@@ -86,7 +83,7 @@ const Quiz = () => {
 
     setAnswered(true);
 
-    // **プログレスバーを更新**
+    // プログレスバー更新
     const newProgress = ((questionIndex + 1) / questions.length) * 100;
     document.querySelector(".progress").style.width = `${newProgress}%`;
   };
@@ -99,15 +96,14 @@ const Quiz = () => {
       setFeedback("");
       setHighlightedChoices([]);
       setCorrectAnswerText("");
-      setQuestionIndex((prevIndex) => prevIndex + 1);
+      setQuestionIndex((prev) => prev + 1);
     } else {
-      setQuestionIndex(questions.length); // 終了画面へ
+      setQuestionIndex(questions.length); // 終了画面
     }
   };
 
-  // 配列をランダムに並び替える関数
   const shuffleArray = (array) => {
-    const shuffled = array.slice(); // 元の配列を変更しないようにコピー
+    const shuffled = array.slice();
     for (let i = shuffled.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
@@ -116,13 +112,11 @@ const Quiz = () => {
   };
 
   const handleStartQuiz = () => {
-    // クイズ開始時に questions をシャッフル
     const shuffledQuestions = shuffleArray(questions);
     setQuestions(shuffledQuestions);
-
     setQuizStarted(true);
     setQuestionIndex(0);
-    setcorrectAnswerCount(0);
+    setCorrectAnswerCount(0);
     setAnswered(false);
     setFeedback("");
     setHighlightedChoices([]);
@@ -131,7 +125,34 @@ const Quiz = () => {
 
   const handleReturnToTitle = () => {
     setQuizStarted(false);
+    setQuizFile(""); // ファイル選択画面に戻す
   };
+
+  if (!quizFile) {
+    // ファイル選択画面
+    return (
+      <div>
+        <h1>クイズファイルを選択してください</h1>
+        <button onClick={() => handleSelectFile("questions1.json")}>
+          2025年度版クイズ
+        </button>
+        <button
+          style={{ marginLeft: "20px" }}
+          onClick={() => handleSelectFile("questions2.json")}
+        >
+          2026年度版クイズ
+        </button>
+      </div>
+    );
+  }
+
+  if (questions.length === 0) {
+    return (
+      <p>
+        問題ファイルが読み込まれませんでした...作成者に問い合わせてください。
+      </p>
+    );
+  }
 
   const currentQuestion = questions[questionIndex];
 
@@ -147,6 +168,7 @@ const Quiz = () => {
           {questionIndex < questions.length ? (
             <>
               <h2>{currentQuestion.question}</h2>
+
               {currentQuestion.type === "single" && (
                 <div>
                   {currentQuestion.choices.map((choice, index) => (
@@ -169,6 +191,7 @@ const Quiz = () => {
                   ))}
                 </div>
               )}
+
               {currentQuestion.type === "multiple" && (
                 <div>
                   {currentQuestion.choices.map((choice, index) => (
@@ -189,6 +212,7 @@ const Quiz = () => {
                   ))}
                 </div>
               )}
+
               {currentQuestion.type === "text" && (
                 <div>
                   <input
@@ -199,14 +223,16 @@ const Quiz = () => {
                   />
                 </div>
               )}
+
               {feedback && <p>{feedback}</p>}
-              {correctAnswerText && <p>{correctAnswerText}</p>}{" "}
-              {/* 自由記述の正解を表示 */}
+              {correctAnswerText && <p>{correctAnswerText}</p>}
+
               {!answered ? (
                 <button onClick={handleAnswer}>回答</button>
               ) : (
                 <button onClick={handleNext}>次の問題</button>
               )}
+
               <div className="progress-container">
                 <div className="progress-bar">
                   <div
