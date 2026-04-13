@@ -94,12 +94,12 @@
     {
       "id": "9",
       "type": "single",
-      "question": "FRET（Fluorescence Resonance Energy Transfer）において、ドナーとアクセプター間の距離 RRR とエネルギー移動効率 EFRETE_{FRET}EFRET​ の関係として正しいものはどれか。",
+      "question": "FRET（Fluorescence Resonance Energy Transfer）において、ドナーとアクセプター間の距離Rとエネルギー移動効率EFRETの関係として正しいものはどれか。",
       "choices": [
-        "EFRET​ は距離 RRR に比例する",
-        "EFRET​ は距離 RRR の二乗に反比例する",
-        "EFRET​ は距離 RRR の六乗に反比例する",
-        "EFRET​ は距離 RRR に依存しない"
+        "EFRETは距離Rに比例する",
+        "EFRETは距離Rの二乗に反比例する",
+        "EFRETは距離Rの六乗に反比例する",
+        "EFRETは距離Rに依存しない"
       ],
       "correctAnswer": 2
     },
