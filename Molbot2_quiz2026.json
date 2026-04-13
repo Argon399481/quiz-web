@@ -1,0 +1,713 @@
+{
+  "questions": [
+    {
+      "id": "1",
+      "type": "single",
+      "question": "LNA（Locked Nucleic Acid）の糖部分は、メチレン架橋によってどの立体配座（コンフォメーション）に固定されていますか？",
+      "choices": ["C1-endo", "C2-Endo", "C3-Endo", "C4-Endo"],
+      "correctAnswer": 1,
+      "reference": 6
+    },
+    {
+      "id": "2",
+      "type": "single",
+      "question": "LNAにおけるメチレン架橋は、糖部分のどの位置の間で形成されていますか？",
+      "choices": ["2-Oと4-C", "3-Oと5-O", "2-Cと3-C", "1-Cと4-C"],
+      "correctAnswer": 0,
+      "reference": 6
+    },
+    {
+      "id": "3",
+      "type": "single",
+      "question": "LNAがアンチセンス技術などへ応用される理由の一つとして、テキストで言及されているLNAの性質はどれですか？",
+      "choices": [
+        "膜透過性の向上",
+        "自己複製能の獲得",
+        "ヌクレアーゼ（核酸分解酵素）に対する耐性",
+        "蛍光発光特性の付与"
+      ],
+      "correctAnswer": 2,
+      "reference": 6
+    },
+    {
+      "id": "4",
+      "type": "single",
+      "question": "標的となる入力DNA分子が存在しない場合でも生じてしまう、非特異的な増幅（バックグラウンドノイズ）の主な原因として知られている現象は何ですか？",
+      "choices": [
+        "スプライシング",
+        "相同組換え",
+        "エンドサイトーシス",
+        "ab initio DNA合成"
+      ],
+      "correctAnswer": 3,
+      "reference": 6
+    },
+    {
+      "id": "5",
+      "type": "single",
+      "question": "生きた細胞を水溶液から隔てている細胞膜は、主に脂質二重層から構成されています。この脂質二重層の厚さはおよそどれくらいですか？",
+      "choices": ["0.5〜0.7 nm", "5〜7 nm", "50〜70 nm", "500〜700 nm"],
+      "correctAnswer": 1,
+      "reference": 7
+    },
+    {
+      "id": "6",
+      "type": "single",
+      "question": "1972年にSingerとNicholsonによって提唱された、流動性の高い脂質二重層に疎水部を持つ膜タンパク質が浮かんだり結合したりしているとする細胞膜の構造モデルは何ですか？",
+      "choices": [
+        "ユニット膜モデル",
+        "サンドイッチモデル",
+        "リポソームモデル",
+        "流動モザイクモデル"
+      ],
+      "correctAnswer": 3,
+      "reference": 7
+    },
+    {
+      "id": "7",
+      "type": "single",
+      "question": "両親媒性分子が水溶液中で濃度を増し、自己集合してミセル構造などの高次構造を形成し始める基準となる濃度のことを何と呼びますか？",
+      "choices": [
+        "臨界ミセル濃度（CMC）",
+        "最大許容濃度（MAC）",
+        "最小発育阻止濃度（MIC）",
+        "半数致死濃度（LC50）"
+      ],
+      "correctAnswer": 0,
+      "reference": 7
+    },
+    {
+      "id": "8",
+      "type": "single",
+      "question": "第8章で主に設計戦略が二分されている、DNAナノポアの2つの代表的な構造タイプは何ですか？",
+      "choices": [
+        "プラスミド型と直鎖状二重鎖型",
+        "DNAオリガミ型と六重らせんバンドル（6HB）型",
+        "i-モチーフ型とG-クアドラプレックス型",
+        "リポソーム型とミセル型"
+      ],
+      "correctAnswer": 1,
+      "reference": 8
+    },
+    {
+      "id": "9",
+      "type": "single",
+      "question": "Burnsらが報告した6HB型ナノポアにおいて、DNAの負電荷を中和し脂質膜の厚さに対応する疎水性ベルトを形成するために、DNA骨格のリン酸基に施された化学修飾は何ですか？",
+      "choices": [
+        "エチル基修飾",
+        "メチル化修飾",
+        "アセチル化修飾",
+        "コレステロール修飾"
+      ],
+      "correctAnswer": 0,
+      "reference": 8
+    },
+    {
+      "id": "10",
+      "type": "single",
+      "question": "より小型のDNAナノポアとして設計された4HB（4ヘリックスバンドル）の主な利点として挙げられているものは何ですか？",
+      "choices": [
+        "巨大なタンパク質を透過できるほどの大きな孔径を持つこと",
+        "ATPを特異的に認識して開閉する自動ゲート機能を持つこと",
+        "構造がシンプルであるため、作製時間が短く低コストであること",
+        "脂質二重層を完全に破壊して細胞融合を引き起こすこと"
+      ],
+      "correctAnswer": 2,
+      "reference": 8
+    },
+    {
+      "id": "11",
+      "type": "single",
+      "question": "光応答性ペプチドナノファイバーによるGUV（巨大単層小胞）の形態変化について正しいものはどれか。",
+      "choices": [
+        "SP型ペプチドはナノファイバーを解離させ、GUVを球形に戻す。",
+        "MC型ペプチドはβシートナノファイバーを形成する。",
+        "SP型ペプチドの形成するナノファイバーにより、GUVはワーム状に変形する。",
+        "MC型ペプチドはATP加水分解によって生成される。"
+      ],
+      "correctAnswer": 2,
+      "reference": 18
+    },
+    {
+      "id": "12",
+      "type": "single",
+      "question": "β-annulusペプチドから形成される人工ウイルスキャプシドによるGUVの出芽（budding）について正しいものはどれか。",
+      "choices": [
+        "アルキルアンカー修飾β-annulusペプチドは脂質膜に結合できない。",
+        "GUV内部にアルキルアンカー修飾β-annulusペプチドを封入すると、内側から外側への出芽が起こる。",
+        "出芽はATP加水分解によってのみ誘導される。",
+        "キャプシド形成にはDNAが必須である。"
+      ],
+      "correctAnswer": 1,
+      "reference": 18
+    },
+    {
+      "id": "13",
+      "type": "single",
+      "question": "人工エンベロープウイルスレプリカの細胞侵入機構について正しいものはどれか。",
+      "choices": [
+        "カチオン性脂質膜を持つ人工ウイルスは、アニオン性GUVと相互作用して膜融合により侵入する。",
+        "ズイッターイオン性GUVではカチオン性ウイルスレプリカの侵入が促進される。",
+        "人工ウイルスは膜融合を起こさず、エンドサイトーシスのみで侵入する。",
+        "DOTAPは負電荷脂質であり膜融合を阻害する。"
+      ],
+      "correctAnswer": 0,
+      "reference": 18
+    },
+    {
+      "id": "14",
+      "type": "single",
+      "question": "細胞骨格フィラメントの物理的性質とリポソーム形態変化の関係として最も適切なものはどれか。",
+      "choices": [
+        "アクチンフィラメントは剛直であり、両端で膜を押してチューブ状突起を形成する。",
+        "微小管は柔軟であるため、膜の内側に沿って曲がり円形束を形成する。",
+        "アクチンフィラメントは柔軟であるため膜内面に沿って曲がり、円形束を形成してディスク状変形を誘導する。",
+        "微小管は極性を持たないため、分子モーターと相互作用できない。"
+      ],
+      "correctAnswer": 2,
+      "reference": 19
+    },
+    {
+      "id": "15",
+      "type": "single",
+      "question": "高濃度アクチンフィラメントを封入したリポソームの形態制御機構について正しいものはどれか。",
+      "choices": [
+        "アクチンフィラメントは等方的ゲルを形成し、リポソーム形状には影響しない。",
+        "アクチンフィラメントはネマティック液晶相を形成し、紡錘形リポソームを形成する。",
+        "アクチンフィラメントは結晶構造を形成し、リポソームは立方体形状になる。",
+        "ネマティック液晶形成にはATP加水分解が必須である。"
+      ],
+      "correctAnswer": 1,
+      "reference": 19
+    },
+    {
+      "id": "16",
+      "type": "single",
+      "question": "人工細胞モデルにおける形態変化の可逆制御について、微小管を用いたシステムの特徴として正しいものはどれか。",
+      "choices": [
+        "微小管の重合・脱重合はATP濃度のみで制御される。",
+        "微小管は温度や静水圧の変化によって重合状態が制御できる。",
+        "微小管は極性を持たないため分子モーターによる滑り運動が起こらない。",
+        "微小管の変形は不可逆であり一度しか起こらない。"
+      ],
+      "correctAnswer": 1,
+      "reference": 19
+    },
+    {
+      "id": "17",
+      "type": "single",
+      "question": "ネマティック液晶としてモデル化された細胞骨格系において、トポロジカル欠陥（topological defect）のトポロジカル電荷 qqq の定義として最も適切なものはどれか。",
+      "choices": [
+        "欠陥周囲の配向角の総回転角をπで割った値",
+        "欠陥周囲の配向角の総回転角を2πで割った値",
+        "欠陥周囲の配向角の平均値",
+        "欠陥周囲の弾性エネルギー密度の積分値"
+      ],
+      "correctAnswer": 1,
+      "reference": 20
+    },
+    {
+      "id": "18",
+      "type": "single",
+      "question": "ネマティック液晶としてモデル化された細胞骨格タンパク質が閉じた領域に存在する場合、欠陥電荷の総和に関するトポロジカル制約として正しいものはどれか。\n（Mは領域の穴の数）",
+      "choices": ["∑qk​=M", "∑qk​=2−M", "∑qk​=1−M", "∑qk​=0"],
+      "correctAnswer": 2,
+      "reference": 20
+    },
+    {
+      "id": "19",
+      "type": "single",
+      "question": "Frank弾性エネルギー最小化問題において、ネマティック配向角 ϕ(x,y)\\phi(x,y)ϕ(x,y) が満たす方程式として正しいものはどれか。",
+      "choices": [
+        "Helmholtz方程式",
+        "Poisson方程式",
+        "Laplace方程式",
+        "Schrödinger方程式"
+      ],
+      "correctAnswer": 2,
+      "reference": 20
+    },
+    {
+      "id": "20",
+      "type": "single",
+      "question": "ネマティック欠陥の空間制御を目的として分子ロボットの幾何構造を設計する場合、実験的に単一の安定欠陥配置を得るための最も重要な設計指針はどれか。",
+      "choices": [
+        "境界形状に高い回転対称性を持たせる",
+        "境界形状の回転対称性を破る",
+        "障害物を完全に除去する",
+        "欠陥電荷を整数値のみに制限する"
+      ],
+      "correctAnswer": 1,
+      "reference": 20
+    },
+    {
+      "id": "21",
+      "type": "single",
+      "question": "In Chapter 3, why is light considered an ideal external stimulus for DNA systems?\n",
+      "choices": [
+        "It always makes DNA longer\n",
+        "It gives spatiotemporal control without contaminating the solution\n",
+        "It permanently stops all DNA reactions\n",
+        "It removes all metal ions from solution\n"
+      ],
+      "correctAnswer": 1,
+      "reference": 3
+    },
+    {
+      "id": "22",
+      "type": "single",
+      "question": "Which group is described as the most commonly used for caging DNA?",
+      "choices": [
+        "Carboxyl group\n",
+        "Ortho-nitrobenzyl group\n",
+        "Phosphate group\n",
+        "Amino group\n"
+      ],
+      "correctAnswer": 1,
+      "reference": 3
+    },
+    {
+      "id": "23",
+      "type": "single",
+      "question": "In azobenzene-modified DNA, what usually happens under UV light?\n",
+      "choices": [
+        "The duplex becomes more stable\n",
+        "Cis-rich state is induced and the duplex tends to dissociate\n",
+        "DNA is converted into RNA\n",
+        "The DNA is cut into proteins\n"
+      ],
+      "correctAnswer": 1,
+      "reference": 3
+    },
+    {
+      "id": "24",
+      "type": "single",
+      "question": "Which metal-mediated base pair is formed between thymine bases?\n",
+      "choices": ["T–Cu²⁺–T\n", "T–Ag⁺–T\n", "T–Hg²⁺–T\n", "T–K⁺–T\n"],
+      "correctAnswer": 2,
+      "reference": 3
+    },
+    {
+      "id": "25",
+      "type": "single",
+      "question": "What is toehold-mediated strand displacement (TMSD)?\n",
+      "choices": [
+        "A reaction where a protein cuts DNA randomly\n",
+        "A reaction where invader DNA binds to a single-stranded toehold and replaces a strand\n",
+        "A reaction where DNA becomes a lipid membrane\n",
+        "A reaction where RNA changes into DNA origami\n"
+      ],
+      "correctAnswer": 1,
+      "reference": 4
+    },
+    {
+      "id": "26",
+      "type": "single",
+      "question": "In Chapter 4, what effect did PLL-g-Dex have on the hybridization chain reaction (HCR)?\n",
+      "choices": [
+        "It stopped HCR completely\n",
+        "It made the reaction about 40 times faster\n",
+        "It changed HCR into a protein reaction\n)",
+        "It removed the initiator DNA\n"
+      ],
+      "correctAnswer": 1,
+      "reference": 4
+    },
+    {
+      "id": "27",
+      "type": "single",
+      "question": "What is a characteristic property of PAU, a ureido polymer?\n",
+      "choices": [
+        "It only dissolves in oil\n",
+        "It shows UCST-type phase behavior\n",
+        "It always stays as a solid crystal\n",
+        "It degrades DNA immediately\n"
+      ],
+      "correctAnswer": 1,
+      "reference": 4
+    },
+    {
+      "id": "28",
+      "type": "single",
+      "question": "What is DNA origami?\n",
+      "choices": [
+        "A method that folds long single-stranded DNA into a designed shape using many short staple strands\n",
+        "A method that converts DNA into enzymes\n",
+        "A method that melts all DNA into monomers\n",
+        "A method that makes RNA from lipids\n"
+      ],
+      "correctAnswer": 0,
+      "reference": 5
+    },
+    {
+      "id": "29",
+      "type": "single",
+      "question": "In the bending DNA origami actuator, what can induce bending by pulling adjacent piers inward?\n",
+      "choices": [
+        "ATP hydrolysis only\n",
+        "G-quadruplex formation in the presence of K⁺\n)",
+        "Protein translation\n",
+        "Removal of all bridge strands\n"
+      ],
+      "correctAnswer": 1,
+      "reference": 5
+    },
+    {
+      "id": "30",
+      "type": "single",
+      "question": "One application of DNA origami actuators in Chapter 5 is to control cell behavior by changing the spacing of what ligand on the actuator?\n",
+      "choices": [
+        "Glucose\n",
+        "Cholesterol\n",
+        "RGD peptide\n",
+        "Hemoglobin\n"
+      ],
+      "correctAnswer": 2,
+      "reference": 5
+    },
+    {
+      "id": "31",
+      "type": "single",
+      "question": "イオンチャネルペプチドとして正しくないものはどれか",
+      "choices": [
+        "アラメシチン",
+        "マガイニン I",
+        "グラミシジン A",
+        "バリノマイシン"
+      ],
+      "correctAnswer": 3,
+      "reference": 9
+    },
+    {
+      "id": "32",
+      "type": "single",
+      "question": "両親媒性ヘリックスのテンプレートの配列の略称",
+      "choices": ["matplotlib", "Aib", "De novo", "BXBA20"],
+      "correctAnswer": 3,
+      "reference": 9
+    },
+    {
+      "id": "33",
+      "type": "single",
+      "question": "特定の条件下でイオン透過性のポア（細孔）を形成・崩壊させる機能を持つイオンチャネルペプチドは、分子ロボットへの応用において好ましいが、特に優れているとされる構造は何か？",
+      "choices": [
+        "親水性環状ペプチド",
+        "両親媒性αヘリックスペプチド",
+        "疎水性αヘリックスペプチド",
+        "両親媒性環状ペプチド"
+      ],
+      "correctAnswer": 1,
+      "reference": 9
+    },
+    {
+      "id": "34",
+      "type": "single",
+      "question": "人工細胞膜はいずれも（） に基づく同じメカニズムで形成されます",
+      "choices": ["液滴接触法", "人工細胞膜形成法", "滴定法", "カスケード法"],
+      "correctAnswer": 0,
+      "reference": 10
+    },
+    {
+      "id": "35",
+      "type": "single",
+      "question": "プローブシステムの利点全て",
+      "choices": ["簡単", "高効率", "誰でもできる", "何度でもできる"],
+      "reference": 10
+    },
+    {
+      "id": "36",
+      "type": "single",
+      "question": "DNAナノポアは膜に刺さりにくい。それはなぜか？",
+      "choices": [
+        "DNAナノポアが親水性だから",
+        "DNAナノポアが疎水性だから",
+        "DNAナノポアが両親媒性だから",
+        "脂質膜の内部が親水性だから"
+      ],
+      "correctAnswer": 0,
+      "reference": 10
+    },
+    {
+      "id": "37",
+      "type": "single",
+      "question": "プローブシステムにおいて金針電極特有の利点",
+      "choices": [
+        "脱挿入解析による形成機構の評価ができる",
+        "長時間測定できる",
+        "大きなポアの評価ができる",
+        "効率がよい"
+      ],
+      "correctAnswer": 0,
+      "reference": 10
+    },
+    {
+      "id": "38",
+      "type": "single",
+      "question": "V字型フッ素化MAの利点",
+      "choices": [
+        "カリウム選択性",
+        "メカノセンシティビティ",
+        "リガンド応答性",
+        "カルシウム選択性"
+      ],
+      "correctAnswer": 2,
+      "reference": 11
+    },
+    {
+      "id": "39",
+      "type": "single",
+      "question": "フッ素化マクロ環によって形成される超分子ナノチューブの特性は？",
+      "choices": [
+        "セロトニン応答性",
+        "高い水透過性",
+        "メカノセンシティビティ",
+        "電圧応答性"
+      ],
+      "correctAnswer": 1,
+      "reference": 11
+    },
+    {
+      "id": "40",
+      "type": "single",
+      "question": "マクロ環状フッ素化MAの利点",
+      "choices": [
+        "電圧応答性",
+        "カルシウム選択性",
+        "カリウム選択性",
+        "高い水透過性"
+      ],
+      "correctAnswer": 2,
+      "reference": 11
+    },
+    {
+      "id": "41",
+      "type": "single",
+      "question": "2023年にMagliaグループが明らかにしたタンパク質ナノポアの形は？",
+      "choices": ["円筒型", "円錐型", "二重円筒型", "四角錐型"],
+      "correctAnswer": 1,
+      "reference": 12
+    },
+    {
+      "id": "42",
+      "type": "single",
+      "question": "Giant vesicles (GVs)と呼ばれるのは直径がどのくらいの脂質二重膜であるか？",
+      "choices": [
+        "1 μmより大きい",
+        "100 nmより大きい",
+        "10 nmより大きい",
+        "1 nmより大きい"
+      ],
+      "correctAnswer": 0,
+      "reference": 13
+    },
+    {
+      "id": "43",
+      "type": "single",
+      "question": "Woolfsonらが作った水に溶けやすい人工ナノポアはポアの内部に何を配置し、親水性を持たせたか",
+      "choices": ["ロイシン", "トリプトファン", "極性アミノ酸　", "チロシン"],
+      "correctAnswer": 2,
+      "reference": 12
+    },
+    {
+      "id": "44",
+      "type": "single",
+      "question": "多数のGVの同時操作を可能にし、変化の統計解析を容易にする装置は？",
+      "choices": [
+        "マイクロ流体デバイス",
+        "遠心分離機",
+        "電気形成装置",
+        "パルスジェット法"
+      ],
+      "correctAnswer": 0,
+      "reference": 13
+    },
+    {
+      "id": "45",
+      "type": "single",
+      "question": "trapping microstructures と組み合わせるとサイズのそろったGVを配置できるものは？",
+      "choices": ["DOPC", "DLD", "DOPG", "HDA"],
+      "correctAnswer": 1,
+      "reference": 13
+    },
+    {
+      "id": "46",
+      "type": "single",
+      "question": "αHLを用いてATPを脂質小胞に輸送する例（Deshpandeら）や、VDACを用いてpH情報を脂質小胞に伝達する例（Takagiら）に共通する目的は何か。",
+      "choices": [
+        "脂質小胞の強度を向上させること",
+        "脂質小胞のサイズを均等にするため",
+        "脂質小胞を固定し、観察するため",
+        "脂質小胞内で物質輸送や情報伝達を行い、分子システムを機能化すること"
+      ],
+      "correctAnswer": 3,
+      "reference": 12
+    },
+    {
+      "id": "47",
+      "type": "single",
+      "question": "エマルション法と膨潤法に共通するデメリットは何？",
+      "choices": [
+        "水溶性高分子の封入効率が高い",
+        "高温処理が必須である",
+        "作成したGUVのサイズが不均一になる",
+        "マイクロ流路デバイスが必須である"
+      ],
+      "correctAnswer": 2,
+      "reference": 14
+    },
+    {
+      "id": "48",
+      "type": "single",
+      "question": "PUREシステムをベシクル内に封入した際に起きてしまう膜破壊を止める方法は？",
+      "choices": [
+        "グリセロールを高濃度で添加する",
+        "外液にポリビニルアルコールを0.5 %添加する",
+        "内液のマグネシウムイオンの濃度を上げる",
+        "わずかにホスホクレアチンを添加する"
+      ],
+      "correctAnswer": 1,
+      "reference": 14
+    },
+    {
+      "id": "49",
+      "type": "single",
+      "question": "マイクロ流路を用いたGUV法に含まれないものはどれか",
+      "choices": [
+        "二重エマルションテンプレート法",
+        "エマルション転移法",
+        "パルスジェット法",
+        "電気泳動法"
+      ],
+      "correctAnswer": 3,
+      "reference": 14
+    },
+    {
+      "id": "50",
+      "type": "single",
+      "question": "MscLチャネルの開閉を制御する因子として正しいものはどれか",
+      "choices": ["温度や圧力", "ATP濃度", "pHや光", "酵素濃度"],
+      "correctAnswer": 2,
+      "reference": 12
+    },
+    {
+      "id": "51",
+      "type": "single",
+      "question": "アメーバ型ロボットの候補としてのリポソームに期待されていることとして適切でないものはどれか。",
+      "choices": [
+        "全く変形しない強靭さ",
+        "センサ、プロセッサ、アクチュエータの統合",
+        "任意の変形"
+      ],
+      "correctAnswer": 0,
+      "reference": 15
+    },
+    {
+      "id": "52",
+      "type": "single",
+      "question": "AFMによるリポソームの機械的特性の評価について誤った説明はどれか。",
+      "choices": [
+        "鋭利な針(probe)がついたカンチレバー(cantilever)を用いて対象物の表面の抗力を測定し画像化する。",
+        "カンチレバー(cantilever)のたわみはレーザー光により検知される。",
+        "針ではなく平行板2枚で挟むことで、リポソームの破裂を回避する新しい手法が提案された。"
+      ],
+      "correctAnswer": 2,
+      "reference": 15
+    },
+    {
+      "id": "53",
+      "type": "single",
+      "question": "レーザートラップ法によるリポソームの機械的特性評価についての説明のうち、誤っているものはどれか。",
+      "choices": [
+        "レーザー光の運動量変化に伴う放射圧を利用して、非接触で数ピコニュートンレベルの力を加えることができる。",
+        "単一のレーザービームのみを用いた場合、リポソームはビーム軸に沿って引き伸ばされ、その変形量から機械的特性を評価できる。",
+        "光ピンセット（単一ビーム）を用いてリポソーム表面に付着させたビーズを引っ張ることで、膜からチューブを引き出す力を測定できる。"
+      ],
+      "correctAnswer": 1,
+      "reference": 15
+    },
+    {
+      "id": "54",
+      "type": "single",
+      "question": "MPAによるリポソームの機械特性の評価についての説明のうち、最も適切なものはどれか。",
+      "choices": [
+        "リポソームの膜を吸引する際、数分間の実験中においては内部の溶媒が透過しやすく、体積が大きく変動すると仮定して解析が行われる。",
+        "細胞に対して主に使用される粘弾性モデルを適用することで、膜単体の特性だけでなく、内部構造や内包液を含めたリポソーム全体の機械的特性を評価できる。",
+        "吸引圧力を生み出すためには専用のマイクロチャネルポンプシステムが必須であり、大気圧（液面の高さの差）を利用することはできない。"
+      ],
+      "correctAnswer": 1,
+      "reference": 15
+    },
+    {
+      "id": "55",
+      "type": "single",
+      "question": "マイクロ流路を用いたリポソームの機械特性評価（MPAの模倣）の特徴として、適切でないものはどれか。",
+      "choices": [
+        "マイクロピペット吸引法（MPA）と同等の原理でありながら、実験者に高度な操作スキルを要求しない。",
+        "流路内に複数の狭窄部を設けることで、一度に複数のリポソームを同時に評価し、時間効率を向上させることができる。",
+        "流路の壁面への吸着や破裂を完全に防ぐことができるため、BSA（ウシ血清アルブミン）などのコーティング処理は不要である。"
+      ],
+      "correctAnswer": 2,
+      "reference": 15
+    },
+    {
+      "id": "56",
+      "type": "single",
+      "question": "2本指マイクロハンドシステムを用いた微小物体の操作についての説明のうち、誤っているものはどれか。",
+      "choices": [
+        "エンドエフェクタ（指先）を駆動させるアクチュエータとして圧電素子を用いることで、高速かつ精密な動作を実現している。",
+        "対象物がエンドエフェクタに付着した場合、付着した物体を引き剥がすためにエンドエフェクタを直接振動させる「動的リリース」などが用いられる。",
+        "微小スケールでの操作は静電気力や分子間力などの表面力が支配的となるため、接触式のマイクロハンドでは対象物を全く離すことができず、実用化されていない。"
+      ],
+      "correctAnswer": 2,
+      "reference": 15
+    },
+    {
+      "id": "57",
+      "type": "single",
+      "question": "マイクロハンドシステムを用いた細胞やリポソームの剛性（Stiffness）測定に関する記述のうち、適切なものはどれか。",
+      "choices": [
+        "針状（needle-shaped）のエンドエフェクタを用いた場合、細胞に均等な荷重をかけることができ、細胞内構造を含む反力を安定して測定するのに最も適している。",
+        "測定中に対象物が滑って動いてしまう問題を解決するため、微小な負圧をかけたピペットを用いて対象物を吸引し、固定する技術が適用された。",
+        "マイクロハンドシステムで測定されたリポソームの剛性の値は、原子間力顕微鏡（AFM）などで測定された値と比較することはできない。"
+      ],
+      "correctAnswer": 1,
+      "reference": 15
+    },
+    {
+      "id": "58",
+      "type": "single",
+      "question": "天然のペプチドの機能を模倣した膜活性をもつ合成高分子（Synthetic polymers）についての説明で、誤っているものはどれか。",
+      "choices": [
+        "合成高分子は、モノマー配列や分子量を完全に制御して単一の分子種として合成することが難しく、タンパク質のような高次構造（αヘリックスなど）も形成しにくい。",
+        "脂質膜にポア（細孔）を形成するためには、ポリマーが膜の疎水性コアに挿入される必要があり、メチル基のような短い側鎖ではなく十分に長い疎水性鎖が求められる。",
+        "ポア形成ポリマーが作る細孔は非常に大きいため、スクロースのような低分子だけでなく、デキストランのような巨大な分子も容易に透過させる。"
+      ],
+      "correctAnswer": 2,
+      "reference": 16
+    },
+    {
+      "id": "59",
+      "type": "single",
+      "question": "合成ポリマーによる脂質膜のドメイン形成についての説明のうち、適切なものはどれか。",
+      "choices": [
+        "複数のカチオン性（正電荷）の側鎖を持つポリマーが、脂質膜中の負電荷を持つ特定の脂質分子を凝集させることで、ドメイン構造の形成が誘起される。",
+        "ポリマーを添加する前は明暗の領域が分かれていたが、添加後は脂質が完全に混ざり合い均一な蛍光シグナルとなる。",
+        "ドメインが形成されると、ポリマーが新たに結合できるサイトが減るため、その後の膜への吸着は進行しなくなる。"
+      ],
+      "correctAnswer": 0,
+      "reference": 17
+    },
+    {
+      "id": "60",
+      "type": "single",
+      "question": "合成ポリマーによって形成される「脂質ナノディスク」についての説明で、誤っているものはどれか。",
+      "choices": [
+        "アポリポタンパク質A-I（Apo A-I）の両親媒性構造を模倣したポリマーを添加することで、リポソームなどの脂質膜が断片化し、円盤状の分子集合体が自発的に形成される。",
+        "アルツハイマー病などの原因となるアミロイド形成タンパク質に対して、ナノディスクは表面積が限られているため凝集をオリゴマー状態でトラップし、線維の形成を阻害する。",
+        "生細胞への分子デリバリーのキャリアとして利用した場合、ナノディスクはリポソームと比較して細胞への取り込み効率が著しく低い。"
+      ],
+      "correctAnswer": 2,
+      "reference": 17
+    }
+  ]
+}
