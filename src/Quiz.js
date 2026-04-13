@@ -133,14 +133,20 @@ const Quiz = () => {
     return (
       <div>
         <h1>クイズファイルを選択してください</h1>
-        <button onClick={() => handleSelectFile("questions1.json")}>
-          2025年度版クイズ
+        <button onClick={() => handleSelectFile("BIOMOD_Bible_quiz2026.json")}>
+          BIOMOD虎の巻クイズ
         </button>
         <button
           style={{ marginLeft: "20px" }}
-          onClick={() => handleSelectFile("questions2.json")}
+          onClick={() => handleSelectFile("Highschool_Biology_quiz2026.json")}
         >
-          2026年度版クイズ
+          高校生物クイズ
+        </button>
+        <button
+          style={{ marginLeft: "20px" }}
+          onClick={() => handleSelectFile("Molbot2_quiz2026.json")}
+        >
+          Moleculer Robotics II クイズ
         </button>
       </div>
     );
